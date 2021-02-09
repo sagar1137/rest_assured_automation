@@ -1,8 +1,8 @@
-package getting_started;
+
 
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
-//import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.*;
 
 public class NewTest1 {
   
@@ -14,10 +14,10 @@ public class NewTest1 {
 		when().
 			get("/all").
 		then().
-			statusCode(201);
+			statusCode(200);
 	}
 	
-	/*@Test
+	@Test
 	public void validate_json() {
 
 		given().
@@ -35,5 +35,5 @@ public class NewTest1 {
 				"languages[0].nativeName", equalTo("English")
 				
 				);
-	}*/
+	}
 }
