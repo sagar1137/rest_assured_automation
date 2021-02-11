@@ -1,6 +1,9 @@
 
 
 import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
@@ -39,7 +42,7 @@ public class NewTest1 {
 				);
 	}
 		
-	@Test
+	@Test @Ignore
 		public void validate_xml()
 		{
 			given().
@@ -62,4 +65,24 @@ public class NewTest1 {
 					"current.city.country",equalTo("GB")
 							);
 		}
+	
+	@Test
+	public void extract_response_data() {
+		Response response=given().
+		
+		baseUri("http://api.openweathermap.org/data/2.5").
+		
+		
+		queryParam("q", "London").
+		queryParam("appid", "04b4c7762897d42b72199ac3ce2e02bb").
+		queryParam("mode", "json").
+		
+		when().
+		get("/weather").
+		
+		then().extract().response();
+		
+		System.out.println(response.asPrettyString());
+		
+	}
 	}
