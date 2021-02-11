@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7673" started-at="2021-02-09T14:30:55 IST" finished-at="2021-02-09T14:31:02 IST">
+  <suite name="Default suite" duration-ms="10440" started-at="2021-02-11T14:03:55 IST" finished-at="2021-02-11T14:04:06 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7673" started-at="2021-02-09T14:30:55 IST" finished-at="2021-02-09T14:31:02 IST">
+    <test name="Default test" duration-ms="10440" started-at="2021-02-11T14:03:55 IST" finished-at="2021-02-11T14:04:06 IST">
       <class name="NewTest1">
-        <test-method status="PASS" signature="simple_get_test()[pri:0, instance:NewTest1@67205a84]" name="simple_get_test" duration-ms="5071" started-at="2021-02-09T14:30:55 IST" finished-at="2021-02-09T14:31:00 IST">
+        <test-method status="PASS" signature="simple_get_test()[pri:0, instance:NewTest1@614ddd49]" name="simple_get_test" duration-ms="8019" started-at="2021-02-11T14:03:55 IST" finished-at="2021-02-11T14:04:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simple_get_test -->
-        <test-method status="PASS" signature="validate_json()[pri:0, instance:NewTest1@67205a84]" name="validate_json" duration-ms="2566" started-at="2021-02-09T14:31:00 IST" finished-at="2021-02-09T14:31:02 IST">
+        <test-method status="PASS" signature="validate_json()[pri:0, instance:NewTest1@614ddd49]" name="validate_json" duration-ms="2082" started-at="2021-02-11T14:04:03 IST" finished-at="2021-02-11T14:04:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_json -->
+        <test-method status="PASS" signature="validate_xml()[pri:0, instance:NewTest1@614ddd49]" name="validate_xml" duration-ms="307" started-at="2021-02-11T14:04:06 IST" finished-at="2021-02-11T14:04:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_xml -->
       </class> <!-- NewTest1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

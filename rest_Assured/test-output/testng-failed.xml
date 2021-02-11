@@ -5,8 +5,7 @@
     <classes>
       <class name="NewTest1">
         <methods>
-          <include name="validate_json"/>
-          <include name="simple_get_test"/>
+          <include name="validate_xml"/>
         </methods>
       </class> <!-- NewTest1 -->
     </classes>

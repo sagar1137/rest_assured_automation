@@ -4,9 +4,11 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+import org.junit.Ignore;
+
 public class NewTest1 {
   
-	@Test
+	@Test@Ignore
 	public void simple_get_test() {
 		
 		given().
@@ -17,7 +19,7 @@ public class NewTest1 {
 			statusCode(200);
 	}
 	
-	@Test
+	@Test @Ignore
 	public void validate_json() {
 
 		given().
@@ -36,4 +38,28 @@ public class NewTest1 {
 				
 				);
 	}
-}
+		
+	@Test
+		public void validate_xml()
+		{
+			given().
+			
+				baseUri("http://api.openweathermap.org/data/2.5").
+				
+				
+				queryParam("q", "London").
+				queryParam("appid", "04b4c7762897d42b72199ac3ce2e02bb").
+				queryParam("mode", "xml").
+				
+				when().
+				get("/weather").
+						
+			
+			then().
+				statusCode(200).
+						body(
+					"current.city.@name",equalTo("London"),
+					"current.city.country",equalTo("GB")
+							);
+		}
+	}
