@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10440" started-at="2021-02-11T14:03:55 IST" finished-at="2021-02-11T14:04:06 IST">
+  <suite name="Default suite" duration-ms="5825" started-at="2021-02-11T14:12:38 IST" finished-at="2021-02-11T14:12:43 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10440" started-at="2021-02-11T14:03:55 IST" finished-at="2021-02-11T14:04:06 IST">
+    <test name="Default test" duration-ms="5825" started-at="2021-02-11T14:12:38 IST" finished-at="2021-02-11T14:12:43 IST">
       <class name="NewTest1">
-        <test-method status="PASS" signature="simple_get_test()[pri:0, instance:NewTest1@614ddd49]" name="simple_get_test" duration-ms="8019" started-at="2021-02-11T14:03:55 IST" finished-at="2021-02-11T14:04:03 IST">
+        <test-method status="PASS" signature="extract_response_data()[pri:0, instance:NewTest1@614ddd49]" name="extract_response_data" duration-ms="1569" started-at="2021-02-11T14:12:38 IST" finished-at="2021-02-11T14:12:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extract_response_data -->
+        <test-method status="PASS" signature="simple_get_test()[pri:0, instance:NewTest1@614ddd49]" name="simple_get_test" duration-ms="1747" started-at="2021-02-11T14:12:39 IST" finished-at="2021-02-11T14:12:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simple_get_test -->
-        <test-method status="PASS" signature="validate_json()[pri:0, instance:NewTest1@614ddd49]" name="validate_json" duration-ms="2082" started-at="2021-02-11T14:04:03 IST" finished-at="2021-02-11T14:04:06 IST">
+        <test-method status="PASS" signature="validate_json()[pri:0, instance:NewTest1@614ddd49]" name="validate_json" duration-ms="2114" started-at="2021-02-11T14:12:41 IST" finished-at="2021-02-11T14:12:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_json -->
-        <test-method status="PASS" signature="validate_xml()[pri:0, instance:NewTest1@614ddd49]" name="validate_xml" duration-ms="307" started-at="2021-02-11T14:04:06 IST" finished-at="2021-02-11T14:04:06 IST">
+        <test-method status="PASS" signature="validate_xml()[pri:0, instance:NewTest1@614ddd49]" name="validate_xml" duration-ms="364" started-at="2021-02-11T14:12:43 IST" finished-at="2021-02-11T14:12:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_xml -->
